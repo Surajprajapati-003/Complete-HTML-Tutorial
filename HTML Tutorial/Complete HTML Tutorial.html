@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Complete HTML tutorial covering headings, lists, tables, forms, links, media, semantic HTML, HTML5 features, meta tags, accessibility, and best practices.">
+    <title>Complete HTML Tutorial</title>
+    <link rel="icon" href="https://via.placeholder.com/16.png" type="image/png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        section {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+        }
+        code {
+            background-color: #ecf0f1;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+        ul, ol {
+            margin: 10px 0 15px 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #2980b9;
+            color: white;
+        }
+        label, input, select, textarea, button {
+            display: block;
+            width: 100%;
+            margin-top: 5px;
+        }
+        button {
+            margin-top: 10px;
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+        }
+        button:hover {
+            background-color: #1f5f8b;
+        }
+        nav a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: #2980b9;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        aside {
+            background-color: #ecf0f1;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        audio, video {
+            display: block;
+            margin: 10px 0;
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Complete HTML Tutorial</h1>
+        <p>Learn all major HTML concepts, forms, media, semantic elements, and HTML5 features in one page.</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav style="
+    position: sticky;  /* Makes nav stick */
+    top: 0;            /* Sticks to top of page */
+    background-color: #fff;
+    padding: 10px 0;
+    border-bottom: 2px solid #2980b9;
+    z-index: 1000;     /* Ensures it stays above other elements */
+">
+    <a href="#headings">Headings</a>
+    <a href="#lists">Lists</a>
+    <a href="#tables">Tables</a>
+    <a href="#forms">Forms</a>
+    <a href="#links-media">Links & Media</a>
+    <a href="#semantic">Semantic HTML</a>
+    <a href="#html5-features">HTML5 Features</a>
+    <a href="#audio-video">Audio & Video</a>
+</nav>
+
+    <!-- Headings Section -->
+    <section id="headings">
+        <h2>HTML Headings</h2>
+        <h1>Heading 1 (Most Important)</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6 (Least Important)</h6>
+    </section>
+
+    <!-- Lists Section -->
+    <section id="lists">
+        <h2>HTML Lists</h2>
+        <h3>Ordered List</h3>
+        <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ol>
+        <h3>Unordered List</h3>
+        <ul>
+            <li>Apple</li>
+            <li>Banana</li>
+            <li>Mango</li>
+        </ul>
+        <h3>Description List</h3>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Markup language for creating web pages.</dd>
+            <dt>CSS</dt>
+            <dd>Styles web pages.</dd>
+        </dl>
+    </section>
+
+    <!-- Tables Section -->
+    <section id="tables">
+        <h2>HTML Tables</h2>
+        <table>
+            <caption>Student Marks</caption>
+            <tr>
+                <th>Name</th>
+                <th>Math</th>
+                <th>Science</th>
+            </tr>
+            <tr>
+                <td>Suraj</td>
+                <td>95</td>
+                <td>89</td>
+            </tr>
+            <tr>
+                <td>Anita</td>
+                <td>88</td>
+                <td>90</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Forms Section -->
+    <section id="forms">
+        <h2>HTML Forms Advanced</h2>
+        <form action="/submit_form" method="post">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" checked>
+            <label for="male" style="display:inline;">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female" style="display:inline;">Female</label>
+
+            <label>Hobbies:</label>
+            <input type="checkbox" id="reading" name="hobbies" value="Reading">
+            <label for="reading" style="display:inline;">Reading</label>
+            <input type="checkbox" id="sports" name="hobbies" value="Sports">
+            <label for="sports" style="display:inline;">Sports</label>
+
+            <label for="course">Course:</label>
+            <select id="course" name="course" required>
+                <option value="">--Select--</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">JavaScript</option>
+            </select>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="3"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Links & Media Section -->
+    <section id="links-media">
+        <h2>Links & Media</h2>
+        <p>Example of a link:</p>
+        <a href="https://www.w3schools.com" target="_blank">Visit W3Schools</a>
+
+        <h3>Embedding Images</h3>
+        <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+
+        <h3>Embedding Iframe</h3>
+        <iframe src="https://www.w3schools.com" width="600" height="400" title="Example Iframe"></iframe>
+    </section>
+
+    <!-- Semantic HTML Section -->
+    <section id="semantic">
+        <h2>Semantic HTML</h2>
+        <header>
+            <h3>Header Section</h3>
+            <p>Contains the page title or navigation.</p>
+        </header>
+        <nav>
+            <p>Navigation example with semantic &lt;nav&gt; tag.</p>
+        </nav>
+        <main>
+            <article>
+                <h3>Article Example</h3>
+                <p>This is a self-contained article inside &lt;article&gt; tag.</p>
+            </article>
+            <aside>
+                <h4>Sidebar Example</h4>
+                <p>Extra content using &lt;aside&gt; tag.</p>
+            </aside>
+        </main>
+        <footer>
+            <p>Footer of the page</p>
+        </footer>
+    </section>
+
+    <!-- HTML5 Features Section -->
+    <section id="html5-features">
+        <h2>HTML5 Features</h2>
+        <ul>
+            <li>New Input Types: date, time, color, range</li>
+            <li>Audio & Video Tags</li>
+            <li>Local Storage & Geolocation (intro)</li>
+            <li>Semantic Elements: header, main, article, aside, footer</li>
+        </ul>
+    </section>
+
+    <!-- Advanced Audio & Video Section -->
+    <section id="audio-video">
+        <h2>HTML Audio & Video Advanced</h2>
+        <h3>Audio Example</h3>
+        <audio controls>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+            Your browser does not support audio.
+        </audio>
+
+        <h3>Video Example</h3>
+        <video width="400" controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Your browser does not support video.
+        </video>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Made By Suraj Prajapati With &#10084; 2026. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

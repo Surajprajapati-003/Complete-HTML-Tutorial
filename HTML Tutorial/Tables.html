@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Tables Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #2980b9;
+            color: white;
+        }
+        caption {
+            caption-side: top;
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>HTML Tables</h1>
+    <p>Tables are used to display data in rows and columns.</p>
+
+    <h2>Basic Table</h2>
+    <table>
+        <caption>Student Marks</caption>
+        <tr>
+            <th>Student Name</th>
+            <th>Math</th>
+            <th>Science</th>
+            <th>English</th>
+        </tr>
+        <tr>
+            <td>Suraj</td>
+            <td>95</td>
+            <td>89</td>
+            <td>92</td>
+        </tr>
+        <tr>
+            <td>Aman</td>
+            <td>88</td>
+            <td>90</td>
+            <td>85</td>
+        </tr>
+        <tr>
+            <td>Vishal</td>
+            <td>76</td>
+            <td>80</td>
+            <td>79</td>
+        </tr>
+    </table>
+
+    <h2>Table with Rowspan and Colspan</h2>
+    <table>
+        <caption>Class Schedule</caption>
+        <tr>
+            <th>Day</th>
+            <th>Morning</th>
+            <th>Afternoon</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Monday   to Thrusday</td>
+            <td>Web Development</td>
+            <td>Semester</td>
+        </tr>
+        <tr>
+            <td>AI/ML</td>
+            <td>DSA</td>
+        </tr>
+        <tr>
+            <td>Friday to Saturday</td>
+            <td colspan="2">Project Work</td>
+        </tr>
+        <tr>
+            <td>Sunday</td>
+            <td colspan="2">Movie</td>
+        </tr>
+    </table>
+
+    <h2>Notes:</h2>
+    <ul>
+        <li><code>&lt;table&gt;</code> creates a table.</li>
+        <li><code>&lt;tr&gt;</code> defines a table row.</li>
+        <li><code>&lt;th&gt;</code> defines a table header (bold and centered by default).</li>
+        <li><code>&lt;td&gt;</code> defines a table cell.</li>
+        <li><code>rowspan</code> merges rows, <code>colspan</code> merges columns.</li>
+        <li>Use <code>&lt;caption&gt;</code> for table title.</li>
+    </ul>
+
+</body>
+</html>

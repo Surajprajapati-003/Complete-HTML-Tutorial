@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Audio & Video Advanced</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        audio, video {
+            display: block;
+            margin: 15px 0;
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>HTML Audio & Video Advanced</h1>
+    <p>This example demonstrates advanced audio and video embedding with multiple sources and attributes.</p>
+
+    <!-- Audio Section -->
+    <section>
+        <h2>Audio Examples</h2>
+        <p>Basic audio with controls:</p>
+        <audio controls>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <p>Audio autoplay, loop, and muted:</p>
+        <audio controls autoplay loop muted>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <p>Multiple audio sources (fallback support):</p>
+        <audio controls>
+            <source src="audio.ogg" type="audio/ogg">
+            <source src="audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <!-- Video Section -->
+    <section>
+        <h2>Video Examples</h2>
+        <p>Basic video with controls:</p>
+        <video width="400" controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+
+        <p>Video autoplay, loop, muted:</p>
+        <video width="400" autoplay loop muted controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <p>Video with poster image (displayed before playback):</p>
+        <video width="400" controls poster="https://via.placeholder.com/400x200.png?text=Video+Poster">
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <p>Video with captions for accessibility:</p>
+        <video width="400" controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            <track src="https://www.w3schools.com/html/mov_bbb_subtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <h2>Notes & Best Practices:</h2>
+    <ul>
+        <li>Always provide multiple sources for maximum browser support.</li>
+        <li>Use <code>controls</code> to allow user playback control.</li>
+        <li>Autoplay videos should usually be muted to avoid disturbing users.</li>
+        <li>Use <code>poster</code> images to give a preview before playback.</li>
+        <li>Use <code>&lt;track&gt;</code> for captions/subtitles to improve accessibility.</li>
+        <li>Provide fallback text for browsers that do not support audio/video.</li>
+    </ul>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Links & Media in HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        img, video, audio, iframe {
+            display: block;
+            margin: 10px 0;
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Links and Media in HTML</h1>
+    <p>This example demonstrates how to use links, images, audio, video, and iframes in HTML.</p>
+
+    <h2>1. Hyperlinks (Links)</h2>
+    <p>Hyperlinks are created using the <code>&lt;a&gt;</code> tag. You can link to external websites, internal pages, or email addresses.</p>
+    
+    <!-- External Link -->
+    <p>External Website: <a href="https://www.w3schools.com" target="_blank">Visit W3Schools</a></p>
+    
+    <!-- Internal Link -->
+    <p>Internal Page: <a href="My Education Journey.html">Go to My Education Journey</a></p>
+    
+    <!-- Email Link -->
+    <p>Email Link: <a href="mailto:surajprajapati8851example.com">Send Email</a></p>
+
+    <h2>2. Images</h2>
+    <p>Images are inserted using the <code>&lt;img&gt;</code> tag.</p>
+    <img src="https://via.placeholder.com/400x200.png?text=Sample+Image" alt="Sample Image">
+    <p>Image with width and height:</p>
+    <img src="https://via.placeholder.com/300x150.png?text=Another+Image" alt="Another Image" width="300" height="150">
+
+    <h2>3. Audio</h2>
+    <p>Audio files can be played using the <code>&lt;audio&gt;</code> tag.</p>
+    <audio controls>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <h2>4. Video</h2>
+    <p>Videos can be added using the <code>&lt;video&gt;</code> tag.</p>
+    <video width="400" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <h2>5. Iframe (Embedding other pages)</h2>
+    <p>Iframes are used to embed another HTML page within your page.</p>
+    <iframe src="https://en.khanacademy.org/a/hypertext-transfer-protocol-http" width="600" height="400" title="Example Iframe"></iframe>
+
+   
+
+</body>
+</html>
